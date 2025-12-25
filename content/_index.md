@@ -40,9 +40,9 @@ Squarespace 技术文档工程师，O'Reilly 撰稿人。\
 在许多设备上，根本没有命令行访问权限，部分原因是这与围墙花园和应用商店的商业利益相悖。
 
 今天大多数人不知道命令行是什么，更不知道为什么要费心使用它。
-正如计算机先驱 Alan Kay 在 [2017 年的一次采访](https://www.fastcompany.com/40435064/what-alan-kay-thinks-about-the-iphone-and-technology-now)中所说："因为人们不理解计算是什么，他们以为 iPhone 就是计算的全部，这种错觉就像以为《吉他英雄》和真正的吉他是一回事一样糟糕。"
+正如计算机先驱 Alan Kay 在 [2017 年的一次采访](https://www.fastcompany.com/40435064/what-alan-kay-thinks-about-the-iphone-and-technology-now)中所说："因为人们不理解计算是什么，他们以为 iPhone 就是计算的全部，这种错觉就像以为玩《劲舞团》，就等于会跳真正的街舞一样。
 
-Kay 所说的"真正的吉他"并不完全是指 CLI。
+Kay 所说的"真正的街舞"并不完全是指 CLI。
 他谈的是编程计算机的方式，这些方式提供了 CLI 的能力，并超越了在文本文件中编写软件的范畴。
 Kay 的追随者们相信，我们需要突破几十年来一直生活其中的基于文本的局部最优。
 
