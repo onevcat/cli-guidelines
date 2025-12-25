@@ -22,6 +22,8 @@ Squarespace 技术文档工程师，O'Reilly 撰稿人。\
 
 设计：[Mark Hurrell](https://mhurrell.co.uk/)。感谢 Andreas Jansson 的早期贡献，以及 Andrew Reitz、Ashley Williams、Brendan Falk、Chester Ramey、Dj Walker-Morgan、Jacob Maine、James Coglan、Michael Dwan 和 Steve Klabnik 审阅草稿。
 
+中文翻译：[Wei Wang (onevcat)](https://onevcat.com) 和他的一众 AI 助手。
+
 <iframe class="github-button" src="https://ghbtns.com/github-btn.html?user=cli-guidelines&repo=cli-guidelines&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
 
 如果你想讨论本指南或 CLI 设计，欢迎[加入我们的 Discord](https://discord.gg/EbAW5rUCkE)。
