@@ -638,7 +638,7 @@ drwxr-xr-x 2 root root   4.0K Jul 20 14:57 skel
 - `NO_COLOR` 环境变量被设置且不为空（无论其值是什么）。
 - `TERM` 环境变量的值为 `dumb`。
 - 用户传入了 `--no-color` 选项。
-- 如果用户想要专门为你的程序禁用颜色，你可能还想添加一个 `MYAPP*NO*COLOR` 环境变量。
+- 如果用户想要专门为你的程序禁用颜色，你可能还想添加一个 `MYAPP_NO_COLOR` 环境变量。
 
 *延伸阅读：[no-color.org](https://no-color.org/)、[12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)*
 
