@@ -1,5 +1,5 @@
 [build]
-  command = "hugo"
+  command = "hugo && bash scripts/fix-cjk-spacing.sh"
   publish = "public"
 
 [build.environment]
