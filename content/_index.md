@@ -46,10 +46,10 @@ Kay 所说的"真正的街舞"并不完全是指 CLI。
 他谈的是编程计算机的方式，这些方式提供了 CLI 的能力，并超越了在文本文件中编写软件的范畴。
 Kay 的追随者们相信，我们需要突破几十年来一直生活其中的基于文本的局部最优。
 
-想象一个我们以完全不同方式编程计算机的未来是令人兴奋的。
-即使在今天，电子表格是迄今为止最流行的编程语言，而无代码运动也在快速兴起，试图取代对优秀程序员的部分强烈需求。
+想象一下，我们会以完全不同方式进行计算机编程，这样的未来令人兴奋。
+即使在今天，电子表格依然是迄今为止最流行的编程语言，而无代码运动也在快速兴起，试图取代对优秀程序员的部分强烈需求。
 
-然而，尽管命令行有着几十年的陈旧约束和莫名其妙的怪癖，它仍然是计算机中最_通用_的角落。
+然而，尽管命令行有着几十年的陈旧约束和莫名其妙的怪癖，它仍然是计算机中最*通用*的角落。
 它让你能够揭开帷幕，看到真正发生的事情，并以 GUI 无法提供的复杂度和深度与机器进行创造性的交互。
 它几乎在任何笔记本电脑上都可用，任何想学习的人都能使用。
 它可以交互式使用，也可以自动化。
@@ -59,9 +59,9 @@ Kay 的追随者们相信，我们需要突破几十年来一直生活其中的�
 所以，既然我们还拥有它，我们就应该努力最大化它的实用性和可访问性。
 
 自那些早期以来，我们编程计算机的方式发生了很大变化。
-过去的命令行是_机器优先_的：不过是脚本平台之上的一个 REPL。
+过去的命令行是*机器优先*的：不过是脚本平台之上的一个 REPL。
 但随着通用解释型语言的蓬勃发展，shell 脚本的角色已经缩小。
-今天的命令行是_人类优先_的：一个基于文本的用户界面，提供对各种工具、系统和平台的访问。
+今天的命令行是*人类优先*的：一个基于文本的用户界面，提供对各种工具、系统和平台的访问。
 过去，编辑器在终端内部——今天，终端同样经常是编辑器的一个功能。
 而且出现了大量类似 `git` 的多功能命令。
 命令中嵌套命令，以及执行完整工作流而非原子功能的高级命令。
@@ -118,7 +118,7 @@ Kay 的追随者们相信，我们需要突破几十年来一直生活其中的�
 JSON，一个更近期的发明，在我们需要时提供了更多结构，让我们更容易将命令行工具与 Web 集成。
 
 无论你构建什么软件，你都可以绝对确定人们会以你没有预料到的方式使用它。
-你的软件_将_成为更大系统的一部分——你唯一的选择是它是否会成为一个行为良好的部件。
+你的软件*将*成为更大系统的一部分——你唯一的选择是它是否会成为一个行为良好的部件。
 
 最重要的是，为可组合性设计不需要与人类优先设计相矛盾。
 本文档中的许多建议都是关于如何同时实现这两者的。
@@ -161,11 +161,11 @@ JSON，一个更近期的发明，在我们需要时提供了更多结构，让�
 可发现的 CLI 有完整的帮助文本，提供大量示例，建议接下来运行什么命令，建议出错时该怎么做。
 有很多想法可以从 GUI 中借鉴，使 CLI 更容易学习和使用，即使对于高级用户也是如此。
 
-_引用：The Design of Everyday Things (Don Norman)，Macintosh Human Interface Guidelines_
+*引用：The Design of Everyday Things (Don Norman)，Macintosh Human Interface Guidelines*
 
 ### 对话是常态 {#conversation-as-the-norm}
 
-GUI 设计，尤其在早期，大量使用_隐喻_：桌面、文件、文件夹、回收站。
+GUI 设计，尤其在早期，大量使用*隐喻*：桌面、文件、文件夹、回收站。
 这很有意义，因为计算机仍在试图引导自己进入合法性。
 隐喻的实现便利性是 GUI 相对于 CLI 的巨大优势之一。
 然而，讽刺的是，CLI 一直体现着一个意外的隐喻：它是一场对话。
@@ -189,13 +189,13 @@ GUI 设计，尤其在早期，大量使用_隐喻_：桌面、文件、文件�
 在最坏的情况下，这是一场敌对的对话，让他们感到愚蠢和怨恨。
 在最好的情况下，这是一次愉快的交流，让他们带着新获得的知识和成就感快速前进。
 
-_延伸阅读：[The Anti-Mac User Interface (Don Gentner and Jakob Nielsen)](https://www.nngroup.com/articles/anti-mac-interface/)_
+*延伸阅读：[The Anti-Mac User Interface (Don Gentner and Jakob Nielsen)](https://www.nngroup.com/articles/anti-mac-interface/)*
 
 ### 健壮性 {#robustness-principle}
 
 健壮性既是客观属性也是主观属性。
-软件当然应该_是_健壮的：意外输入应该被优雅地处理，操作应该尽可能是幂等的，等等。
-但它也应该_感觉_健壮。
+软件当然应该*是*健壮的：意外输入应该被优雅地处理，操作应该尽可能是幂等的，等等。
+但它也应该*感觉*健壮。
 
 你希望你的软件感觉不会散架。
 你希望它感觉即时和响应，就好像它是一台大型机械机器，而不是一个脆弱的塑料"软开关"。
@@ -213,7 +213,7 @@ _延伸阅读：[The Anti-Mac User Interface (Don Gentner and Jakob Nielsen)](ht
 它意味着给用户一种感觉：你站在他们这边，你希望他们成功，你已经仔细考虑过他们的问题以及如何解决它们。
 
 没有一份可以保证他们有这种感觉的行动清单，尽管我们希望遵循我们的建议会让你走完一部分路程。
-取悦用户意味着在每一个转折点都_超越他们的期望_，而这始于同理心。
+取悦用户意味着在每一个转折点都*超越他们的期望*，而这始于同理心。
 
 ### 混沌 {#chaos}
 
@@ -479,7 +479,7 @@ Did you mean ps? [y/n]:
 实际上，你是在裁定他们输入的方式是有效和正确的，你在承诺无限期地支持它。
 在做出这个决定时要有意图，并记录两种语法。
 
-_延伸阅读：["Do What I Mean"](http://www.catb.org/~esr/jargon/html/D/DWIM.html)_
+*延伸阅读：["Do What I Mean"](http://www.catb.org/~esr/jargon/html/D/DWIM.html)*
 
 **如果你的命令期望有东西管道输入，而 `stdin` 是交互式终端，立即显示帮助并退出。**
 这意味着它不会像 `cat` 那样只是挂起。
@@ -489,7 +489,7 @@ _延伸阅读：["Do What I Mean"](http://www.catb.org/~esr/jargon/html/D/DWIM.h
 
 [帮助文本](#help)的目的是给出你的工具是什么、有哪些选项可用以及如何执行最常见任务的简短、即时的概念。
 另一方面，文档是你详细说明的地方。
-这是人们去了解你的工具是做什么的、_不是_做什么的、它是如何工作的，以及如何做他们可能需要做的一切的地方。
+这是人们去了解你的工具是做什么的、*不是*做什么的、它是如何工作的，以及如何做他们可能需要做的一切的地方。
 
 **提供基于网页的文档。**
 人们需要能够在线搜索你的工具的文档，并能够将其他人链接到特定部分。
@@ -527,10 +527,10 @@ DESCRIPTION
 
 **人类可读的输出是最重要的。**
 人类优先，机器其次。
-判断特定输出流（`stdout` 或 `stderr`）是否被人类阅读的最简单、最直接的启发式方法是_它是否是 TTY_。
-无论你使用什么语言，它都会有一个用于此目的的实用程序或库（例如 [Python](https://stackoverflow.com/questions/858623/how-to-recognize-whether-a-script-is-running-on-a-tty)、[Node](https://nodejs.org/api/process.html#process_a_note_on_process_i_o)、[Go](https://github.com/mattn/go-isatty)）。
+判断特定输出流（`stdout` 或 `stderr`）是否被人类阅读的最简单、最直接的启发式方法是*它是否是 TTY*。
+无论你使用什么语言，它都会有一个用于此目的的实用程序或库（例如 [Python](https://stackoverflow.com/questions/858623/how-to-recognize-whether-a-script-is-running-on-a-tty)、[Node](https://nodejs.org/api/process.html#process*a*note*on*process*i*o)、[Go](https://github.com/mattn/go-isatty)）。
 
-_关于[什么是 TTY](https://unix.stackexchange.com/a/4132) 的延伸阅读。_
+*关于[什么是 TTY](https://unix.stackexchange.com/a/4132) 的延伸阅读。*
 
 **在不影响可用性的情况下提供机器可读的输出。**
 文本流是 UNIX 中的通用接口。
@@ -636,9 +636,9 @@ drwxr-xr-x 2 root root   4.0K Jul 20 14:57 skel
 - `NO_COLOR` 环境变量被设置且不为空（无论其值是什么）。
 - `TERM` 环境变量的值为 `dumb`。
 - 用户传入了 `--no-color` 选项。
-- 如果用户想要专门为你的程序禁用颜色，你可能还想添加一个 `MYAPP_NO_COLOR` 环境变量。
+- 如果用户想要专门为你的程序禁用颜色，你可能还想添加一个 `MYAPP*NO*COLOR` 环境变量。
 
-_延伸阅读：[no-color.org](https://no-color.org/)、[12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)_
+*延伸阅读：[no-color.org](https://no-color.org/)、[12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)*
 
 **如果 `stdout` 不是交互式终端，不显示任何动画。**
 这将阻止进度条在 CI 日志输出中变成圣诞树。
@@ -714,16 +714,16 @@ UwlHnUFXgENO3ifPZd8zoSKMxESxxot4tMgvfXjmRp5G3BGrAnonncE7Aj11pn3SSYgEcrrn2sMyLGpV
 **使提交 bug 报告变得轻而易举。**
 你可以做的一件好事是提供一个 URL，并让它预填尽可能多的信息。
 
-_延伸阅读：[Google: Writing Helpful Error Messages](https://developers.google.com/tech-writing/error-messages)、[Nielsen Norman Group: Error-Message Guidelines](https://www.nngroup.com/articles/error-message-guidelines)_
+*延伸阅读：[Google: Writing Helpful Error Messages](https://developers.google.com/tech-writing/error-messages)、[Nielsen Norman Group: Error-Message Guidelines](https://www.nngroup.com/articles/error-message-guidelines)*
 
 ### 参数和标志 {#arguments-and-flags}
 
 术语说明：
 
-- _参数_，或 _args_，是命令的位置参数。
+- *参数*，或 *args*，是命令的位置参数。
   例如，你提供给 `cp` 的文件路径就是 args。
   参数的顺序通常很重要：`cp foo bar` 和 `cp bar foo` 意思不同。
-- _标志_是命名参数，用连字符和单字母名称（`-r`）或双连字符和多字母名称（`--recursive`）表示。
+- *标志*是命名参数，用连字符和单字母名称（`-r`）或双连字符和多字母名称（`--recursive`）表示。
   它们可能包含也可能不包含用户指定的值（`--file foo.txt` 或 `--file=foo.txt`）。
   标志的顺序，一般来说，不影响程序语义。
 
@@ -732,13 +732,13 @@ _延伸阅读：[Google: Writing Helpful Error Messages](https://developers.goog
 它还使将来更容易修改你接受输入的方式。
 有时使用参数时，不破坏现有行为或造成歧义就无法添加新输入。
 
-_引用：[12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)。_
+*引用：[12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)。*
 
 **所有标志都要有完整长度的版本。**
 例如，同时有 `-h` 和 `--help`。
 在脚本中有完整版本是有用的，你想要详细和描述性，而且你不必到处查找标志的含义。
 
-_引用：[GNU Coding Standards](https://www.gnu.org/prep/standards/html_node/Command_002dLine-Interfaces.html)。_
+*引用：[GNU Coding Standards](https://www.gnu.org/prep/standards/html*node/Command*002dLine-Interfaces.html)。*
 
 **只对常用标志使用单字母标志，**特别是在使用子命令时的顶级。
 这样你就不会"污染"你的短标志命名空间，迫使你在将来添加标志时使用复杂的字母和大小写。
@@ -751,7 +751,7 @@ _引用：[GNU Coding Standards](https://www.gnu.org/prep/standards/html_node/Co
 例外是常见的主要操作，其中简洁性值得记忆。
 例如，`cp <source> <destination>`。
 
-_引用：[12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)。_
+*引用：[12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)。*
 
 **如果有标准，使用标准的标志名称。**
 如果另一个常用命令使用某个标志名称，最好遵循那个现有模式。
@@ -796,7 +796,7 @@ _引用：[12 Factor CLI Apps](https://medium.com/@jdxcode/12-factor-cli-apps-dd
 如果用户没有传递参数或标志，提示它。
 （另见：[交互性](#interactivity)）
 
-**永远不要_要求_提示。**
+**永远不要*要求*提示。**
 总是提供一种通过标志或参数传递输入的方式。
 如果 `stdin` 不是交互式终端，跳过提示，只要求那些标志/参数。
 
@@ -894,7 +894,7 @@ unknown flag: --foo
 
 `noun verb` 或 `verb noun` 顺序都可以工作，但 `noun verb` 似乎更常见。
 
-_延伸阅读：[User experience, CLIs, and breaking the world, by John Starich](https://uxdesign.cc/user-experience-clis-and-breaking-the-world-baed8709244f)。_
+*延伸阅读：[User experience, CLIs, and breaking the world, by John Starich](https://uxdesign.cc/user-experience-clis-and-breaking-the-world-baed8709244f)。*
 
 **不要有模糊或名称相似的命令。**
 例如，有两个名为"update"和"upgrade"的子命令是相当令人困惑的。
@@ -947,7 +947,7 @@ b0efebc74f25: Downloading [===========================================>       ] 
 9cb1ba6838a0: Download complete
 ```
 
-要注意的一件事是：当事情进展_顺利_时，在进度条后面隐藏日志使用户更容易理解正在发生什么，但如果有错误，确保你打印出日志。
+要注意的一件事是：当事情进展*顺利*时，在进度条后面隐藏日志使用户更容易理解正在发生什么，但如果有错误，确保你打印出日志。
 否则，将很难调试。
 
 **让事情超时。**
@@ -961,7 +961,7 @@ b0efebc74f25: Downloading [===========================================>       ] 
 如果你可以避免在操作后需要做任何清理，或者你可以将该清理推迟到下次运行，你的程序可以在失败或中断时立即退出。
 这使它既更健壮又更响应。
 
-_引用：[Crash-only software: More than meets the eye](https://lwn.net/Articles/191059/)。_
+*引用：[Crash-only software: More than meets the eye](https://lwn.net/Articles/191059/)。*
 
 **人们会误用你的程序。**
 为此做好准备。
@@ -999,7 +999,7 @@ _引用：[Crash-only software: More than meets the eye](https://lwn.net/Article
 
     $ mycmd echo "hello world"
 
-然而，这有一个严重的缺点：现在你永远不能添加一个名为 `echo` 的子命令——或_任何东西_——而不冒险破坏现有用法。
+然而，这有一个严重的缺点：现在你永远不能添加一个名为 `echo` 的子命令——或*任何东西*——而不冒险破坏现有用法。
 如果有一个脚本使用 `mycmd echo`，在那个用户升级到你工具的新版本后，它会做完全不同的事情。
 
 **不允许子命令的任意缩写。**
@@ -1038,7 +1038,7 @@ $  docker-compose up
 ### 配置 {#configuration}
 
 命令行工具有很多不同类型的配置，以及很多不同的提供方式（标志、环境变量、项目级配置文件）。
-提供每条配置的最佳方式取决于几个因素，其中最重要的是_特定性_、_稳定性_和_复杂性_。
+提供每条配置的最佳方式取决于几个因素，其中最重要的是*特定性*、*稳定性*和*复杂性*。
 
 配置一般分为几类：
 
@@ -1096,7 +1096,7 @@ XDG 基本目录规范（[完整规范](https://specifications.freedesktop.org/b
 
 ### 环境变量 {#environment-variables}
 
-**环境变量用于_随命令运行上下文而变化_的行为。**
+**环境变量用于*随命令运行上下文而变化*的行为。**
 环境变量的"环境"是终端会话——命令运行的上下文。
 所以，环境变量可能在每次命令运行时变化，或在一台机器上的终端会话之间变化，或在跨多台机器的一个项目的实例之间变化。
 
@@ -1157,7 +1157,7 @@ XDG 基本目录规范（[完整规范](https://specifications.freedesktop.org/b
 
 > "注意对缩写的痴迷和对大写字母的回避；[Unix] 是由对他们来说重复性压力障碍就像矿工的黑肺病一样的人发明的系统。
 > 长名字被磨损成三个字母的残块，就像被河流磨平的石头。"
-> — Neal Stephenson，_[In the Beginning was the Command Line](https://web.stanford.edu/class/cs81n/command.txt)_
+> — Neal Stephenson，*[In the Beginning was the Command Line](https://web.stanford.edu/class/cs81n/command.txt)*
 
 你的程序名称在 CLI 上特别重要：你的用户会一直输入它，它需要容易记住和输入。
 
@@ -1170,7 +1170,7 @@ XDG 基本目录规范（[完整规范](https://specifications.freedesktop.org/b
 
 **保持简短。**
 用户会一直输入它。
-不要把它做得_太_短：最短的命令最好保留给一直使用的常见实用程序，如 `cd`、`ls`、`ps`。
+不要把它做得*太*短：最短的命令最好保留给一直使用的常见实用程序，如 `cd`、`ls`、`ps`。
 
 **使它容易输入。**
 如果你期望人们整天输入你的命令名，让他们的手轻松一点。
@@ -1178,7 +1178,7 @@ XDG 基本目录规范（[完整规范](https://specifications.freedesktop.org/b
 一个真实的例子：在 Docker Compose 成为 `docker compose` 之前很久，它是 [`plum`](https://github.com/aanand/fig/blob/0eb7d308615bae1ad4be1ca5112ac7b6b6cbfbaf/setup.py#L26)。
 这原来是一个如此尴尬的、单手跳跃的动作，以至于它立即被重命名为 [`fig`](https://github.com/aanand/fig/commit/0cafdc9c6c19dab2ef2795979dc8b2f48f623379)，它——除了更短之外——流畅得多。
 
-_延伸阅读：[The Poetics of CLI Command Names](https://smallstep.com/blog/the-poetics-of-cli-command-names/)_
+*延伸阅读：[The Poetics of CLI Command Names](https://smallstep.com/blog/the-poetics-of-cli-command-names/)*
 
 ### 分发 {#distribution}
 
@@ -1223,7 +1223,7 @@ _延伸阅读：[The Poetics of CLI Command Names](https://smallstep.com/blog/th
   联系并询问人们如何使用你的工具。
   在你的文档和仓库中鼓励反馈和功能请求，并尝试从提交反馈的人那里获取更多上下文。
 
-_延伸阅读：[Open Source Metrics](https://opensource.guide/metrics/)_
+*延伸阅读：[Open Source Metrics](https://opensource.guide/metrics/)*
 
 ## 延伸阅读 {#further-reading}
 
